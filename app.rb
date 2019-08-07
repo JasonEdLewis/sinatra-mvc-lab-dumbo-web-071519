@@ -4,14 +4,14 @@ class App < Sinatra::Base
 
 
     get '/' do 
-        
+
         erb :index
     end
 
     post '/' do
         @string = params[:string]
-
-        erb :
+        binding.pry
+        erb :result
     end
 
 end
